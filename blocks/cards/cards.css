@@ -8,7 +8,6 @@
 }
 
 .cards > ul > li {
-  border: 1px solid var(--dark-color);
   background-color: var(--background-color);
 }
 
@@ -58,7 +57,7 @@
   margin-bottom: 50px;
 }
 .cards > ul > li img {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 2 / 1;
 }
 
 .cards.across .cards-card-image { grid-area: image; }
@@ -71,4 +70,11 @@
   .cards.across  > ul > li {
     display: block;
   }
+}
+
+.cards a.button:any-link {
+  all: unset;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
 }

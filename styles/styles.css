@@ -10,6 +10,25 @@
  * governing permissions and limitations under the License.
  */
 
+
+ @font-face {
+  font-family: inter-regular;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://little-forest-58aa.david8603.workers.dev/?url=https://avalerehealth.com/media/content/fonts/Inter-Regular.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: inter;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('https://little-forest-58aa.david8603.workers.dev/?url=https://avalerehealth.com/media/content/fonts/Inter-Light.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
  :root {
   /* colors */
   --link-color: #035fe6;
@@ -24,12 +43,12 @@
   --background-color-light: #a5610f;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
-  --heading-font-family: var(--body-font-family);
+  --body-font-family: inter, roboto-fallback;
+  --heading-font-family: 'inter';
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
-  --body-font-size-m: 22px;
+  --body-font-size-m: 16px;
   --body-font-size-s: 18px;
   --body-font-size-xs: 16px;
   --body-font-size-xxl: 13px;
@@ -40,12 +59,12 @@
   --heading-font-size-xxl: 48px;
   --heading-font-size-xl: 40px;
   --heading-font-size-l: 32px;
-  --heading-font-size-m: 24px;
+  --heading-font-size-m: 18px;
   --heading-font-size-s: 20px;
   --heading-font-size-xs: 18px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 103px;
 }
 
 @font-face {
@@ -60,9 +79,9 @@
     --heading-font-size-xxl: 60px;
     --heading-font-size-xl: 48px;
     --heading-font-size-l: 36px;
-    --heading-font-size-m: 30px;
+    --heading-font-size-m: 18px;
     --heading-font-size-s: 24px;
-    --heading-font-size-xs: 22px;
+    --heading-font-size-xs: 14px;
   }
 }
 
@@ -105,6 +124,10 @@ h4 { font-size: var(--heading-font-size-m); }
 h5 { font-size: var(--heading-font-size-s); }
 h6 { font-size: var(--heading-font-size-xs); }
 
+h6 {
+  text-transform: uppercase;
+}
+
 p,
 dl,
 ol,
@@ -139,7 +162,7 @@ main pre {
 
 /* links */
 a:any-link {
-  color: var(--link-color);
+  color: #000;
   text-decoration: none;
 }
 
