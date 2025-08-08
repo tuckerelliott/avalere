@@ -92,7 +92,7 @@ body {
   line-height: 1.6;
   color: var(--text-color);
 
-  background: linear-gradient(115deg, rgb(229, 250, 205), white);
+  background: linear-gradient(150deg, rgb(229, 250, 205), white 40%);
   content: "";
   height: 100%;
   left: 0px;
