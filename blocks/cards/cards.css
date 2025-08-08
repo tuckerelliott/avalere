@@ -72,9 +72,10 @@
   }
 }
 
-.cards a.button:any-link {
+.cards a:any-link {
   all: unset;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 1;
+  cursor: pointer;
 }
